@@ -26,6 +26,7 @@ We tried very hard to avoid complex types. We should be entirely C99 compatabile
 Our API is contained to one simple API header ```WebRTCAPI.h``` which provides runtime support to the WebRTC library. The following subset demonstrates the simplicity of our API.
 
 ```c++
+...
 GXP_EXPORT intptr_t _stdcall ContextCreateMediaStream(intptr_t context, const char* streamId);
 GXP_EXPORT void _stdcall ContextStopMediaStreamTrack(intptr_t context, intptr_t track);
 GXP_EXPORT intptr_t _stdcall ContextCreateAudioTrackSource(intptr_t context);
@@ -33,6 +34,7 @@ GXP_EXPORT intptr_t _stdcall ContextCreateAudioTrack(intptr_t context, const cha
 GXP_EXPORT void _stdcall ContextAddRefPtr(intptr_t context, intptr_t ptr);
 GXP_EXPORT void _stdcall ContextDeleteRefPtr(intptr_t context, intptr_t ptr);
 GXP_EXPORT bool _stdcall MediaStreamAddTrack(intptr_t stream, intptr_t track);
+...
 ```
 
 ## Runtime & Callbacks
