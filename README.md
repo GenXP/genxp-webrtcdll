@@ -1,5 +1,5 @@
 # genxp-webrtcdll
- A fully functional WebRTC Runtime Wrapper with a C/C++ provided WebRTCAPI.h header.
+ A fully functional WebRTC Runtime C/C++ Wrapper.
  
  ## Why Runtime / Dynamic DLL?
  TLDR; Where is my static lib? This isn't that library. If you are looking for a static lib you can likely compile our library to support it but we don't recommend it. You are bound to find yourself fighting with symbology collisions from the many libraries that WebRTC ships with and your other projects. You also don't have the priviledge to isolate WebRTC from the rest of your codebase.
