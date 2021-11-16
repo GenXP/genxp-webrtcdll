@@ -10,6 +10,18 @@
 
 However, to our knowledge we are the **only** C compatible runtime wrapper. We've negotiated the complexity of WebRTC to an easy to use Wrapper.
 
+## API
+
+```
+GXP_EXPORT intptr_t _stdcall ContextCreateMediaStream(intptr_t context, const char* streamId);
+GXP_EXPORT void _stdcall ContextStopMediaStreamTrack(intptr_t context, intptr_t track);
+GXP_EXPORT intptr_t _stdcall ContextCreateAudioTrackSource(intptr_t context);
+GXP_EXPORT intptr_t _stdcall ContextCreateAudioTrack(intptr_t context, const char* label, intptr_t source);
+GXP_EXPORT void _stdcall ContextAddRefPtr(intptr_t context, intptr_t ptr);
+GXP_EXPORT void _stdcall ContextDeleteRefPtr(intptr_t context, intptr_t ptr);
+GXP_EXPORT bool _stdcall MediaStreamAddTrack(intptr_t stream, intptr_t track);
+```...
+
 ## Runtime & Callbacks
 
 ## Examples
