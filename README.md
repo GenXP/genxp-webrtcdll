@@ -1,6 +1,11 @@
 # genxp-webrtcdll
  A fully functional WebRTC Runtime Wrapper with a C/C++ provided WebRTCAPI.h header.
  
+ ## Why Runtime / Dynamic DLL?
+ TLDR; Where is my static lib? This isn't that library. If you are looking for a static lib you can likely compile our library to support it but we don't recommend it. You are bound to find yourself fighting with symbology collisions from the many libraries that WebRTC ships with and your other projects. You also don't have the priviledge to isolate WebRTC from the rest of your codebase.
+ 
+ WebRTC is a mammoth. Runtime support means you can call and interact with the library on your terms. Our wrapper gives you lots of callback support which is passed directly to the WebRTC library.
+ 
  ## What is it?
  This is a fully functional WebRTC C/C++ wrapper. First of all. We aren't the only wrapper out there. Other wrapper examples include:
  - [Microsoft's WinRTC WebRTC Wrapper](https://github.com/microsoft/winrtc/tree/master/WebRtcWrapper)
@@ -10,7 +15,7 @@
 
 However, to our knowledge we are the **only** C compatible runtime wrapper. We've negotiated the complexity of WebRTC to an easy to use Wrapper.
 
-## Windows x64 Support Storage Ptrs
+## Windows x64 support storage Ptrs
 This wrapper is intended to be used for x64 only. We believe the best way to negotiate most pointers via an int pointer is the best method. Unfortunately, standard int can result in a loss of data with x64 binaries. Therefore all of our storage pointers are ```intptr_t``` or ```int64```.
 
 ## Supporting standard types
