@@ -15,7 +15,7 @@ This wrapper is intended to be used for x64 only. We believe the best way to neg
 
 ## Supporting standard types
 We tried very hard to avoid complex types. We should be entirely C99 compatabile. Our only include is:
-```c++ #include <stdint.h>```
+```#include <stdint.h>```
 
 ## API
 Our API is contained to one simple API header ```WebRTCAPI.h``` which provides runtime support to the WebRTC library. The following subset demonstrates the simplicity of our API.
