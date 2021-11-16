@@ -1,4 +1,4 @@
-# genxp-webrtcdll
+# GenXP Runtime WebRTC DLL
  A fully functional WebRTC Runtime C/C++ Wrapper.
  
  ## Why Runtime / Dynamic DLL?
