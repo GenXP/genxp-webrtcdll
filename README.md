@@ -12,7 +12,7 @@
  - [Unity3D's WebRTC Plugin](https://github.com/Unity-Technologies/com.unity.webrtc)
  - NodeJS WebRTC Wrapper
  - [Wk Webview WebRTC Shim](https://github.com/common-tater/wkwebview-webrtc-shim)
- - [Discord WebRTC Wrapper(https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429)
+ - [Discord WebRTC Wrapper](https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429)
 
 However, to our knowledge we are the **only** C compatible runtime wrapper. We've negotiated the complexity of WebRTC to an easy to use Wrapper.
 
