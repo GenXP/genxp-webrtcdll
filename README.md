@@ -12,7 +12,7 @@ However, to our knowledge we are the **only** C compatible runtime wrapper. We'v
 
 ## API
 
-```
+```c++
 GXP_EXPORT intptr_t _stdcall ContextCreateMediaStream(intptr_t context, const char* streamId);
 GXP_EXPORT void _stdcall ContextStopMediaStreamTrack(intptr_t context, intptr_t track);
 GXP_EXPORT intptr_t _stdcall ContextCreateAudioTrackSource(intptr_t context);
